@@ -1,0 +1,18 @@
+PODS:
+  - PrivateRepositoryTest (0.1.0):
+    - PrivateRepositoryTest/Class (= 0.1.0)
+  - PrivateRepositoryTest/Class (0.1.0)
+
+DEPENDENCIES:
+  - PrivateRepositoryTest (from `../`)
+
+EXTERNAL SOURCES:
+  PrivateRepositoryTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PrivateRepositoryTest: 81cb33cedfd8bd04d41c0d59624d380100fee8ac
+
+PODFILE CHECKSUM: 7664f708b8fef770adb55d2f962d37e4fcc7124a
+
+COCOAPODS: 1.6.0

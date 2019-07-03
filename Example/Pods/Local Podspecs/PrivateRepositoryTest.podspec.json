@@ -1,0 +1,29 @@
+{
+  "name": "PrivateRepositoryTest",
+  "version": "0.1.0",
+  "summary": "测试测试",
+  "description": "PrivateRepositoryTest.@测试测试",
+  "homepage": "https://github.com/gulang/PrivateRepositoryTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gulang": "gulang.dcc@dyyunxi.com"
+  },
+  "source": {
+    "git": "git@github.com:DccRush/PrivateRepositoryTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PrivateRepositoryTest/PTheader.h",
+  "subspecs": [
+    {
+      "name": "Class",
+      "public_header_files": "PrivateRepositoryTest/PTPrintClass.h",
+      "source_files": "PrivateRepositoryTest/PTPrintClass.{h,m}"
+    }
+  ]
+}

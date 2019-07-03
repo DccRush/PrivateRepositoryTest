@@ -9,34 +9,32 @@
 Pod::Spec.new do |s|
   s.name             = 'PrivateRepositoryTest'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PrivateRepositoryTest.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.summary          = '测试测试'
+  
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  
+  s.description      = 'PrivateRepositoryTest.@测试测试'
+  
   s.homepage         = 'https://github.com/gulang/PrivateRepositoryTest'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'gulang' => 'rush_dcc@163.com' }
-  s.source           = { :git => 'https://github.com/gulang/PrivateRepositoryTest.git', :tag => s.version.to_s }
+  s.author           = { 'gulang' => 'gulang.dcc@dyyunxi.com' }
+  s.source           = { :git => 'git@github.com:DccRush/PrivateRepositoryTest.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'PrivateRepositoryTest/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PrivateRepositoryTest' => ['PrivateRepositoryTest/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '9.0'
+  
+  s.source_files = 'PrivateRepositoryTest/PTheader.h'
+  
+  s.subspec 'Class' do |ss|
+    ss.public_header_files =
+    'PrivateRepositoryTest/PTPrintClass.h'
+    ss.source_files =
+    'PrivateRepositoryTest/PTPrintClass.{h,m}'
+  end
+  
 end
