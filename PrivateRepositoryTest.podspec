@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PrivateRepositoryTest'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '测试测试'
   
   # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   
   s.description      = 'PrivateRepositoryTest.@测试测试'
   
-  s.homepage         = 'https://github.com/gulang/PrivateRepositoryTest'
+  s.homepage         = 'https://github.com/DccRush/PrivateRepositoryTest/blob/master'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gulang' => 'gulang.dcc@dyyunxi.com' }
@@ -30,11 +30,9 @@ Pod::Spec.new do |s|
   
   s.source_files = 'PrivateRepositoryTest/PTheader.h'
   
-  s.subspec 'Class' do |ss|
-    ss.public_header_files =
-    'PrivateRepositoryTest/PTPrintClass.h'
-    ss.source_files =
-    'PrivateRepositoryTest/PTPrintClass.{h,m}'
+  s.subspec 'View' do |ss|
+    ss.public_header_files = 'PrivateRepositoryTest/PTPrintClass.h'
+    ss.source_files = 'PrivateRepositoryTest/PTPrintClass.{h,m}'
   end
   
 end
